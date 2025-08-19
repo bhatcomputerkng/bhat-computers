@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Message Us – Bhat Computers Kokernag</title>
+<meta name="description" content="Computer sales, service, and IT solutions in Kokernag. Call 7780980095 or email Bhatcomputers042@gmail.com.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.jpg">
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Bhat Computers logo">
+      <span class="title">Bhat Computers</span>
+    </a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="cta">Message Us</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1>Message Us</h1>
+    <p class="note">Fill the form to reach us. To receive emails directly from this static site, replace <code>ACTION_URL</code> with your Formspree/Web3Forms endpoint in the HTML.</p>
+    <form class="contact-form" action="ACTION_URL" method="POST">
+      <input class="input" type="text" name="name" placeholder="Your Name" required>
+      <input class="input" type="email" name="email" placeholder="Your Email" required>
+      <input class="input" type="tel" name="phone" placeholder="Your Phone (optional)">
+      <textarea name="message" placeholder="How can we help?" required></textarea>
+      <!-- Formspree needs a redirect; Web3Forms uses 'redirect' too -->
+      <input type="hidden" name="_subject" value="New message from Bhat Computers website">
+      <input type="hidden" name="redirect" value="https://example.com/thankyou.html">
+      <button class="button primary" type="submit">Send Message</button>
+      <p class="small">Prefer WhatsApp or email? <a href="https://wa.me/917780980095">wa.me/917780980095</a> · <a href="mailto:Bhatcomputers042@gmail.com">Bhatcomputers042@gmail.com</a></p>
+    </form>
+    <div class="note" style="margin-top:12px">
+      <strong>Tip:</strong> Without a backend, services like Formspree/Web3Forms route submissions to your email.
+      Create an endpoint and paste it in place of <code>ACTION_URL</code> to start receiving emails.
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <div class="badge">📍 Kokernag, Jammu & Kashmir</div>
+      <p class="small">© 2025 Bhat Computers. All rights reserved.</p>
+    </div>
+    <div>
+      <strong>Contact</strong>
+      <div><a href="tel:7780980095">📞 7780980095</a></div>
+      <div><a href="mailto:Bhatcomputers042@gmail.com">✉️ Bhatcomputers042@gmail.com</a></div>
+    </div>
+    <div>
+      <strong>Quick Links</strong>
+      <div><a href="services.html">Services</a></div>
+      <div><a href="gallery.html">Gallery</a></div>
+      <div><a href="faq.html">FAQ</a></div>
+      <div><a href="contact.html">Message Us</a></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
