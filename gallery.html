@@ -1,41 +1,62 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Gallery - Bhat Computers</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery - Bhat Computers</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="stylesheet" href="assets/css/style.css"></head>
 <body>
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <img src="assets/images/BHAT_COMPUTERS.jpg" alt="Bhat Computers">
+      <span>Bhat Computers</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
 
-<header>
-  <h1>Bhat Computers - Kokernag</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<div class="container gallery">
-  <h2>Our Gallery</h2>
-  <img src="compressed_images/bckp.jpg" alt="Shop">
-  <img src="compressed_images/services.jpg" alt="Services">
-  <img src="compressed_images/computer.jpg" alt="Computer">
-  <img src="compressed_images/accessories.jpg" alt="Accessories">
-  <img src="compressed_images/BC2_copy.jpg" alt="Shop Front">
-  <img src="compressed_images/BC2.jpg" alt="Inside Shop">
-  <img src="compressed_images/BHAT_COMPUTERS.jpg" alt="Logo">
+<section class="section">
+  <h2 style="font-family:Poppins,sans-serif">Gallery</h2>
+  <div class="hr"></div>
+  <div class="grid gallery">
+    <div class="tile"><img src="assets/images/bckp.jpg" alt="bckp"></div>
+    <div class="tile"><img src="assets/images/services.jpg" alt="services"></div>
+    <div class="tile"><img src="assets/images/computer.jpg" alt="computer"></div>
+    <div class="tile"><img src="assets/images/accessories.jpg" alt="accessories"></div>
+    <div class="tile"><img src="assets/images/BC2_copy.jpg" alt="BC2 copy"></div>
+    <div class="tile"><img src="assets/images/BC2.jpg" alt="BC2"></div>
+    <div class="tile"><img src="assets/images/BHAT_COMPUTERS.jpg" alt="BHAT COMPUTERS"></div>
+  </div>
+</section>
+<div class="lightbox" aria-hidden="true">
+  <img src="" alt="Preview">
+  <div class="lb-nav">
+    <button class="lb-btn" data-prev aria-label="Previous">‹</button>
+    <button class="lb-btn" data-next aria-label="Next">›</button>
+  </div>
+  <button class="lb-btn lb-close" data-close aria-label="Close">✕</button>
 </div>
 
 <footer>
-  <p>&copy; 2025 Bhat Computers | Contact: 7780980095 | Email: Bhatcomputers042@gmail.com</p>
-  <p>
-    <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank">Facebook</a>
-  </p>
+  <div class="footer-inner">
+    <div>© 2025 Bhat Computers, Kokernag</div>
+    <div class="footer-links">
+      <a href="tel:+917780980095">Call</a>
+      <a href="mailto:Bhatcomputers042@gmail.com">Email</a>
+      <a href="https://wa.me/917780980095" target="_blank">WhatsApp</a>
+      <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank">Facebook</a>
+      <a href="contact.html#map" title="Map">Google Maps</a>
+    </div>
+  </div>
 </footer>
-<div class="scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</div>
 
-</body>
-</html>
+<script src="assets/js/script.js"></script>
+</body></html>

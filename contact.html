@@ -1,44 +1,69 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Contact - Bhat Computers</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Bhat Computers</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="stylesheet" href="assets/css/style.css"></head>
 <body>
-
-<header>
-  <h1>Bhat Computers - Kokernag</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<div class="container">
-  <h2>Contact Us</h2>
-  <form action="ACTION_URL" method="POST">
-    <label>Your Name:</label><br>
-    <input type="text" name="name" required><br><br>
-    <label>Your Email:</label><br>
-    <input type="email" name="email" required><br><br>
-    <label>Message:</label><br>
-    <textarea name="message" required></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
-  <p><i>Fill the form to reach us. Replace ACTION_URL with your Formspree/Web3Forms endpoint.</i></p>
+<div class="nav">
+  <div class="inner">
+    <div class="brand">
+      <img src="assets/images/BHAT_COMPUTERS.jpg" alt="Bhat Computers">
+      <span>Bhat Computers</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </div>
 
-<footer>
-  <p>&copy; 2025 Bhat Computers | Contact: 7780980095 | Email: Bhatcomputers042@gmail.com</p>
-  <p>
-    <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank">Facebook</a>
-  </p>
-</footer>
-<div class="scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</div>
+<section class="section">
+  <h2 style="font-family:Poppins,sans-serif">Contact Us</h2>
+  <div class="hr"></div>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+    <div class="card">
+      <h3>Send a Message</h3>
+      <form action="ACTION_URL" method="POST">
+        <label>Name</label><br>
+        <input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #e2e8f0;margin:6px 0 10px"><br>
+        <label>Email</label><br>
+        <input type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #e2e8f0;margin:6px 0 10px"><br>
+        <label>Message</label><br>
+        <textarea name="message" required style="width:100%;padding:10px;border-radius:10px;border:1px solid #e2e8f0;height:120px;margin:6px 0 12px"></textarea><br>
+        <input type="hidden" name="_redirect" value="thankyou.html">
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="note">Replace <b>ACTION_URL</b> with your Formspree/Web3Forms endpoint to receive emails.</p>
+    </div>
+    <div class="card">
+      <h3>Reach Us</h3>
+      <p>📍 Kokernag, Jammu & Kashmir</p>
+      <p>📞 <a href="tel:+917780980095">+91 7780980095</a></p>
+      <p>✉️ <a href="mailto:Bhatcomputers042@gmail.com">Bhatcomputers042@gmail.com</a></p>
+      <p>👍 <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank">Facebook Page</a></p>
+      <p id="map">🗺️ <a href="https://g.page/r/CV668z6TnB-YEBE/review" target="_blank">Open on Google Maps</a></p>
+    </div>
+  </div>
+</section>
 
-</body>
-</html>
+<footer>
+  <div class="footer-inner">
+    <div>© 2025 Bhat Computers, Kokernag</div>
+    <div class="footer-links">
+      <a href="tel:+917780980095">Call</a>
+      <a href="mailto:Bhatcomputers042@gmail.com">Email</a>
+      <a href="https://wa.me/917780980095" target="_blank">WhatsApp</a>
+      <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank">Facebook</a>
+      <a href="contact.html#map" title="Map">Google Maps</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body></html>
