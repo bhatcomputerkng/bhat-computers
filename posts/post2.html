@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tips to Keep Your PC Fast</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fa; }
+    .container {
+      background: white;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    #shareBtn {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    #shareBtn:hover { background: #0056b3; }
+    .share-buttons a {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 15px;
+      background: #eee;
+      border-radius: 6px;
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+    }
+    .share-buttons a:hover { background: #ddd; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tips to Keep Your PC Fast</h1>
+    <p><small>Published on: 22 Aug 2025</small></p>
+    <p>
+      Over time, computers can get slow. Here are some easy fixes:  
+      - Uninstall unused apps.  
+      - Keep your desktop clean.  
+      - Regularly clear cache & temporary files.  
+      - Upgrade RAM or use SSD for speed boost.  
+    </p>
+    <p>
+      Following these tips will keep your system running smoothly.
+    </p>
+
+    <p><a href="../blog.html">⬅ Back to Blog</a></p>
+
+    <button id="shareBtn">🔗 Share</button>
+
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/posts/post2.html" target="_blank">📘 Facebook</a>
+      <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com/posts/post2.html&text=Check%20this%20out!" target="_blank">🐦 Twitter</a>
+      <a href="https://api.whatsapp.com/send?text=Check%20this%20out!%20https://yourwebsite.com/posts/post2.html" target="_blank">💬 WhatsApp</a>
+    </div>
+  </div>
+
+  <script>
+    const shareData = {
+      title: document.title,
+      text: "Check out this post on Bhat Computers!",
+      url: window.location.href
+    };
+
+    const btn = document.getElementById("shareBtn");
+    btn.addEventListener("click", async () => {
+      try {
+        if (navigator.share) {
+          await navigator.share(shareData);
+        } else {
+          alert("Copy this link to share: " + window.location.href);
+        }
+      } catch (err) {
+        console.log("Error: " + err);
+      }
+    });
+  </script>
+</body>
+</html>
